@@ -27,7 +27,7 @@ function loadExternalResource(url, type) {
 // 加载 waifu.css live2d.min.js waifu-tips.js
 if (screen.width >= 768) {
 	Promise.all([
-		loadExternalResource("https://gist.github.com/LovelyHaochi/aaf07611c287c489e5facc4475b272ca/raw/75c5065ba762cb128ea2cb919002499e6c127f8d/waifu.css", "css"),
+		loadExternalResource("https://cdn.jsdelivr.net/gh/LovelyHaochi/haochi@main/files/waifu.css", "css"),
 		loadExternalResource(live2d_path + "live2d.min.js", "js"),
 		loadExternalResource(live2d_path + "waifu-tips.js", "js")
 	]).then(() => {
